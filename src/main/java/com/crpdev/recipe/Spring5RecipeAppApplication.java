@@ -1,4 +1,4 @@
-package guru.springframework;
+package com.crpdev.recipe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
