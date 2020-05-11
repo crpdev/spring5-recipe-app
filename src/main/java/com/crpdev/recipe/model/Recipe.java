@@ -1,6 +1,7 @@
 package com.crpdev.recipe.model;
 
 import javax.persistence.*;
+import java.util.Set;
 
 /**
  * Created by rajapandian
@@ -27,7 +28,8 @@ public class Recipe {
     private Notes notes;
     // TODO: 11/05/20
 //    private Difficulty difficulty;
-
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
+    private Set<Ingredient> ingredients;
 
     public Long getId() {
         return id;
