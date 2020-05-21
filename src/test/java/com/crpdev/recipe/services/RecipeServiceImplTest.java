@@ -25,7 +25,7 @@ public class RecipeServiceImplTest extends TestCase {
     RecipeRepository recipeRepository;
 
     @Override
-    public void setUp() throws Exception {
+    public void setUp() {
         MockitoAnnotations.initMocks(this);
         recipeService = new RecipeServiceImpl(recipeRepository);
     }
